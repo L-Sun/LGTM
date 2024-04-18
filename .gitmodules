@@ -1,0 +1,6 @@
+[submodule "third_packages/TMR"]
+	path = third_packages/TMR
+	url = https://github.com/L-Sun/TMR
+[submodule "third_packages/HumanML3D"]
+	path = third_packages/HumanML3D
+	url = https://github.com/EricGuo5513/HumanML3D
