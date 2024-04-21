@@ -47,6 +47,7 @@ class MotionDiffusion(pl.LightningModule):
         """
 
         super().__init__()
+        self.strict_loading = False
         self.save_hyperparameters()
 
         self.learning_rate = learning_rate
@@ -241,6 +242,9 @@ class MotionDiffusion(pl.LightningModule):
         }
 
         return [optimizer], [lr_scheduler_config]
+
+    def on_save_checkpoint(self, checkpoint: typing.Dict[str, Any]) -> None:
+        checkpoint["state_dict"] = {k: v for k, v in checkpoint["state_dict"].items() if "tmr_model" not in k}
 
 
 class PartMotionEncoder(nn.Module):
