@@ -52,7 +52,11 @@ Then run the following commands:
 cd third_packages/TMR
 python prepare/body_part_annotation_augmentation.py
 ```
-This script will use original full-body motion annotation for `third_packages/TMR/datasets/annotations/humanml3d/annotations.json`  as input, and generate part-level motion description for each body part. The output will be saved in `third_packages/TMR/datasets/annotations/humanml3d/body_part_annotations.json` and `third_packages/TMR/datasets/annotations/body_part`. The former output is group all part annotation in a map, the latter output is save each part annotation in a separate folder for train TMR encoders. You can use the `body_part_annotations.json` for what you want to do.
+This script will use original full-body motion annotation for `third_packages/TMR/datasets/annotations/humanml3d/annotations.json` as input, and generate part-level motion description for each body part. The output will be saved in 
+- `third_packages/TMR/datasets/annotations/humanml3d/body_part_annotations.json`
+- `third_packages/TMR/datasets/annotations/body_part`. 
+The former output is group all part annotation in a map, the latter output is save each part annotation in a separate folder for train TMR encoders. 
+You can use the `body_part_annotations.json` for what you want to do.
 
 
 ## Generation
