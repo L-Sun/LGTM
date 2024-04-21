@@ -46,5 +46,12 @@ echo -e "Download pretrained part-level models"
 python -m gdown "1Qh7uhtEhPKMcztDufgIz7WLaeeBiTPx-"
 unzip body_part_tmr.zip -d models/body_part_tmr
 rm body_part_tmr.zip
-echo -e "Downloded!"
 
+
+echo -e "Prepare LGTM model"
+cd ../../checkpoints
+python -m gdown "1r_baVr24sf1jnz1KPHFaPB-jfkkzS-Iy"
+unzip lgtm.zip
+rm lgtm.zip
+
+echo -e "Finished!"
