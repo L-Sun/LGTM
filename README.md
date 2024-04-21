@@ -34,7 +34,7 @@ cd third_package/HumanML3D
 follow the `third_package/HumanML3D/README.md` to prepare original HumanML3D motion data.
 
 
-Prepare TMR encoders and augmented part-level annotations.
+Prepare pre-trained LGTM model, TMR encoders and augmented part-level annotations.
 ```bash
 bash prepare_data_models.sh
 ```
