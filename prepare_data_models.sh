@@ -49,9 +49,9 @@ rm body_part_tmr.zip
 
 
 echo -e "Prepare LGTM model"
-cd ../../checkpoints
+cd ../../
 python -m gdown "1r_baVr24sf1jnz1KPHFaPB-jfkkzS-Iy"
-unzip lgtm.zip
+unzip lgtm.zip -d checkpoints
 rm lgtm.zip
 
 echo -e "Finished!"
