@@ -4,3 +4,6 @@
 [submodule "third_packages/HumanML3D"]
 	path = third_packages/HumanML3D
 	url = https://github.com/EricGuo5513/HumanML3D
+[submodule "third_packages/fmbvh"]
+	path = third_packages/fmbvh
+	url = https://github.com/zzzark/fmbvh
