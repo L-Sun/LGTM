@@ -41,7 +41,7 @@ bash prepare_data_models.sh
 
 
 #### (Optional) Generate part-level motion description from scratch
-You can generate part-level motion description by yourself. Firstly, you are required to provide OpenAI api key in `./third_packages/TMR/prepare/body_part_annotation_augmentation.py`
+You can generate part-level motion description by yourself. Firstly, you are required to provide OpenAI api key in `./lgtm/utils/body_part_annotation_augmentation.py`
 ```python
 BASE_URL = "https://api.openai.com/v1",
 API_KEY = "",
@@ -49,8 +49,7 @@ API_KEY = "",
 Here, the `API_KEY` can get from your OpenAI account followed this [document](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key)
 Then run the following commands:
 ```bash
-cd third_packages/TMR
-python prepare/body_part_annotation_augmentation.py
+python -m prepare/body_part_annotation_augmentation
 ```
 This script will use original full-body motion annotation for `third_packages/TMR/datasets/annotations/humanml3d/annotations.json` as input, and generate part-level motion description for each body part. The output will be saved in 
 - `third_packages/TMR/datasets/annotations/humanml3d/body_part_annotations.json`
